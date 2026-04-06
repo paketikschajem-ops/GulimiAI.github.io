@@ -1,1 +1,42 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>gulimi — Локальный ИИ-чат</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="app" id="app">
+      <header class="topbar">
+        <div class="brand-wrap">
+          <div class="brand-dot" aria-hidden="true"></div>
+          <div>
+            <h1 class="brand">gulimi</h1>
+            <p class="subtitle">Локальный псевдо‑ИИ без API ключей</p>
+          </div>
+        </div>
 
+        <div class="toolbar">
+          <button id="newChatBtn" class="btn ghost" type="button">Новый чат</button>
+          <button id="themeBtn" class="btn" type="button" aria-label="Сменить тему">🌙 Тема</button>
+        </div>
+      </header>
+
+      <main class="chat-wrap" id="chatWrap" aria-live="polite" aria-label="Окно чата"></main>
+
+      <form id="chatForm" class="inputbar" autocomplete="off">
+        <input
+          id="messageInput"
+          type="text"
+          placeholder="Напишите сообщение для gulimi..."
+          maxlength="500"
+          required
+        />
+        <button id="sendBtn" class="btn send" type="submit">Отправить</button>
+      </form>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
